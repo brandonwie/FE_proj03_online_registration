@@ -1,0 +1,251 @@
+/* =======================
+        Basic Style
+======================== */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #384047;
+    font-family: 'Merriweather', serif;
+  }
+
+#header {
+    width: 100%;
+    background: #353f47;
+    text-align: center;
+    padding: 25px 0;
+}
+
+#header h1 {
+    color: white;
+    font-size: 1.15em;
+    text-transform: uppercase;
+}
+
+.signup {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.first-hr,
+.second-hr {
+    width: 95%;
+    background: #353f47;
+    border: none;
+}
+
+.first-hr {
+    height: 5px;
+    margin-bottom: 0;
+}
+
+.second-hr {
+    height: 2px;
+    margin-top: 4px;
+}
+
+.info {
+    margin-top: 45px;
+    border: none;
+}
+
+legend {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#main {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+form h2,
+form p {
+    text-align: center;
+}
+
+form p {
+    color: rgb(139, 139, 139);
+}
+
+#footer {
+    text-align: center;
+    font-size: .85em;
+    color: rgb(139, 139, 139);
+    margin: 25px 0;
+}
+
+/* =======================
+        Placeholder
+======================== */
+
+#name::placeholder,
+#email::placeholder {
+    color: rgb(199, 199, 199);
+    font-size: .85em;
+    text-align: right;
+}
+
+::placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 1em;
+}
+
+select:invalid {
+    color: rgb(199, 199, 199);
+}
+
+
+/* =================================
+    Form - Contact Information
+================================== */
+
+.contact-row > label {
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+.contact-row > input,
+.contact-row > select {
+    margin-bottom: 10px;
+}
+
+.contact-row > input:focus,
+.contact-row > select:focus {
+    border: 2px solid #353f47;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+select {
+    background: rgb(240, 240, 240);
+    border: none;
+    border-radius: 5px;
+    height: 55px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 1em;
+}
+
+select {
+    text-indent: 9px;
+}
+
+/* =================================
+    Form - Newsletter
+================================== */
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 10px 20px 0;
+}
+
+.newsletter-row > label:first-child {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.newsletter-row {
+    margin-bottom: 20px;
+}
+
+textarea {
+    padding: 15px;
+    font-size: 1em;
+    background: rgb(240, 240, 240);
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100px;
+}
+
+.newsletter-row > textarea:focus {
+    border: 2px solid #353f47;
+}
+
+/* ===================================
+    Flexbox - Contact Information
+=================================== */
+
+.form-outer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.contact-row:last-child > input {
+    max-width: 50%;
+}
+
+/* ===================================
+    Button
+=================================== */
+
+button {
+    color: #FFF;
+    background-color: rgb(67, 185, 170);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    width: 95%;
+    margin: auto;
+    padding: 20px 0;
+    outline: none;
+  }
+
+.button {
+    text-align: center;
+}
+  
+button:hover {
+    background: coral;
+}
+
+/* =======================
+        Media Query
+======================== */
+
+ @media screen and (min-width:768px) {
+    
+    .form-outer {
+       /* border: 1px solid red; */
+    }
+    
+    .contact-row {
+        /* border: 1px solid blue; */
+        flex-direction: row;
+    }
+
+    .contact-row  label {
+        /* border: 1px solid green; */
+        flex: 1;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .contact-row input,
+    .contact-row select {
+        flex: 3;
+        /* border: 1px solid purple; */
+    }
+    
+    .contact-row input {
+        margin-left: 15px;
+    }    
+ }
