@@ -198,7 +198,7 @@ textarea {
 
 button {
     color: #FFF;
-    background-color: rgb(67, 185, 170);
+    background-color: #5bbdb3;
     font-size: 1.25em;
     font-weight: bold;
     text-align: center;
@@ -223,29 +223,25 @@ button:hover {
 
  @media screen and (min-width:768px) {
     
-    .form-outer {
-       /* border: 1px solid red; */
-    }
-    
     .contact-row {
-        /* border: 1px solid blue; */
+        display: block;
         flex-direction: row;
     }
 
-    .contact-row  label {
-        /* border: 1px solid green; */
-        flex: 1;
-        margin: auto;
+    .contact-row label {
+        display: inline-block;
+        width: 135px;
         padding-bottom: 10px;
+        margin-right: 10px;
     }
 
     .contact-row input,
     .contact-row select {
-        flex: 3;
-        /* border: 1px solid purple; */
+        display: inline-block;
+        width: 420px;
     }
     
-    .contact-row input {
-        margin-left: 15px;
-    }    
+    .contact-row:last-child > input {
+        max-width: 33%;
+    }
  }
