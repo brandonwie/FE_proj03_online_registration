@@ -125,13 +125,6 @@ select:invalid {
     margin-bottom: 10px;
 }
 
-.contact-row > input:focus,
-.contact-row > select:focus {
-    border: 2px solid #63798b;
-    background: #869eb3;
-    transition-duration: 1s;
-}
-
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -144,6 +137,16 @@ select {
     padding: 0 15px;
     outline: none;
     font-size: 1em;
+    /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss_dim_width_inputfocus */
+    -webkit-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+
+.contact-row > input:focus,
+.contact-row > select:focus {
+    border: 2px solid #63798b;
+    background: #869eb3;
+    
 }
 
 select {
@@ -212,7 +215,7 @@ textarea {
 
 button {
     color: #FFF;
-    background-color: #fadadd;
+    background-color: #ff8c98;
     font-size: 1.25em;
     font-weight: bold;
     text-align: center;
@@ -228,7 +231,7 @@ button {
 }
   
 button:hover {
-    background: #df5286;
+    background: #EC205A;
     transition-duration: .5s;
 }
 
