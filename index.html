@@ -27,7 +27,8 @@
 
         <hr class="first-hr">
         <hr class="second-hr">
-            
+        
+        <div class="for-bgcolor">   
         <fieldset class="contact info">
             <legend>Contact Information</legend>
             
@@ -45,7 +46,7 @@
 
                 <div class="contact-row">
                 <label for="phone_number">Phone Number</label>
-                <input type="tel" id="phone_number" name="user_number" placeholder="(123)-456-7890">
+                <input type="tel" id="phone_number" name="user_number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
 
                 <div class="contact-row">
@@ -58,7 +59,7 @@
                 <input type="text" id="city" name="user_city" placeholder="New York">
                 </div>
 
-                <!-- STATES codes are from https://codepen.io/carlnunes/pen/yhiEo -->
+                <!-- STATES codes are from https://www.freeformatter.com/usa-state-list-html-select.html -->
                 <div class="contact-row select">
                 <label for="state">State</label>
                 <select id="state" name="state" required>
@@ -121,11 +122,13 @@
                 <label for="zip">Zip Code</label>
                 <input type="text" id="zip" name="user_zip" placeholder="10001">
                 </div>
-            </div>   
+            </div>
+        </div>   
         </fieldset>
 
         <hr class="second-hr">
 
+        <div class="for-bgcolor">
         <fieldset class="newsletter info">
             <legend>Newsletter</legend>
 
@@ -150,6 +153,7 @@
                 <textarea id="other_interest" name="user_bio"></textarea>
                 </div>
             </div>
+        </div>            
         </fieldset>
 
             <div class="button">
